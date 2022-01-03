@@ -29,7 +29,6 @@ public class Main {
 
         Properties prop = new Properties();
         prop.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, brokers);
-        prop.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "0.0.0.0:9092");
         prop.put(ProducerConfig.ACKS_CONFIG,"1");
         prop.put("retries", 0);
         prop.put("batch.size", 16384);
